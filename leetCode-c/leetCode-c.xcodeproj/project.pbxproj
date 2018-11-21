@@ -141,10 +141,10 @@
 			isa = PBXGroup;
 			children = (
 				045FA8DD21A4CF610030ED7B /* leetCode-0111 */,
-				045FA8CB21A4CF610030ED7B /* leetCode-0003 */,
-				045FA8CE21A4CF610030ED7B /* leetCode-0004 */,
 				045FA8D421A4CF610030ED7B /* leetCode-0104 */,
 				045FA8D721A4CF610030ED7B /* leetCode-0022 */,
+				045FA8CE21A4CF610030ED7B /* leetCode-0004 */,
+				045FA8CB21A4CF610030ED7B /* leetCode-0003 */,
 				045FA8D121A4CF610030ED7B /* leetCode-0002 */,
 				045FA8DA21A4CF610030ED7B /* leetCode-0001 */,
 			);
@@ -277,7 +277,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "齐家科技";
+				ORGANIZATIONNAME = Giga;
 				TargetAttributes = {
 					045FA89E21A4CF320030ED7B = {
 						CreatedOnToolsVersion = 9.4.1;

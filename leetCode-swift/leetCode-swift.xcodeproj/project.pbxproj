@@ -11,6 +11,8 @@
 		045FA8F421A4CFB60030ED7B /* leetCode-0001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FA8F321A4CFB60030ED7B /* leetCode-0001.swift */; };
 		045FA8F621A4D4530030ED7B /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FA8F521A4D4530030ED7B /* ListNode.swift */; };
 		045FA8F821A4D47C0030ED7B /* leetCode-0002.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FA8F721A4D47C0030ED7B /* leetCode-0002.swift */; };
+		7BA99C1221A50FE700B0C94F /* leetCode-0003.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA99C1121A50FE700B0C94F /* leetCode-0003.swift */; };
+		7BA99C1421A532DB00B0C94F /* leetCode-0004.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA99C1321A532DB00B0C94F /* leetCode-0004.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,8 @@
 		045FA8F321A4CFB60030ED7B /* leetCode-0001.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "leetCode-0001.swift"; sourceTree = "<group>"; };
 		045FA8F521A4D4530030ED7B /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		045FA8F721A4D47C0030ED7B /* leetCode-0002.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "leetCode-0002.swift"; sourceTree = "<group>"; };
+		7BA99C1121A50FE700B0C94F /* leetCode-0003.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "leetCode-0003.swift"; sourceTree = "<group>"; };
+		7BA99C1321A532DB00B0C94F /* leetCode-0004.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "leetCode-0004.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				045FA8F521A4D4530030ED7B /* ListNode.swift */,
 				045FA8F321A4CFB60030ED7B /* leetCode-0001.swift */,
 				045FA8F721A4D47C0030ED7B /* leetCode-0002.swift */,
+				7BA99C1121A50FE700B0C94F /* leetCode-0003.swift */,
+				7BA99C1321A532DB00B0C94F /* leetCode-0004.swift */,
 			);
 			path = "leetCode-swift";
 			sourceTree = "<group>";
@@ -99,7 +105,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "齐家科技";
+				ORGANIZATIONNAME = Giga;
 				TargetAttributes = {
 					045FA8B121A4CF4B0030ED7B = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -128,9 +134,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BA99C1221A50FE700B0C94F /* leetCode-0003.swift in Sources */,
 				045FA8B621A4CF4B0030ED7B /* main.swift in Sources */,
 				045FA8F421A4CFB60030ED7B /* leetCode-0001.swift in Sources */,
 				045FA8F821A4D47C0030ED7B /* leetCode-0002.swift in Sources */,
+				7BA99C1421A532DB00B0C94F /* leetCode-0004.swift in Sources */,
 				045FA8F621A4D4530030ED7B /* ListNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

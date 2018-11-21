@@ -3,7 +3,7 @@
 //  leetCode-c
 //
 //  Created by liyoucheng on 2018/11/21.
-//  Copyright © 2018年 齐家科技. All rights reserved.
+//  Copyright © 2018年 Giga. All rights reserved.
 //
 
 #include <stdio.h>
