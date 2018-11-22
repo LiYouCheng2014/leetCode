@@ -13,8 +13,10 @@
 #include "leetCode-0003.h"
 #include "leetCode-0004.h"
 #include "leetCode-0005.h"
-
 #include "leetCode-0006.h"
+#include "leetCode-0007.h"
+#include "leetCode-0008.h"
+
 
 int main(int argc, const char * argv[]) {
     
@@ -23,7 +25,9 @@ int main(int argc, const char * argv[]) {
 //    test_0003();
 //    test_0004();
 //    test_0005();
-    test_0006();
+//    test_0006();
+//    test_0007();
+    test_0008();
     
     return 0;
 }
