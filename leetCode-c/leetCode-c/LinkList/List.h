@@ -39,4 +39,19 @@ struct ListNode {
     struct ListNode *next;
 };
 
+//双向链表
+typedef struct double_link_list_node
+{
+    struct double_link_list_node *prev;
+    struct double_link_list_node *next;
+    int data;
+}DoubleLinkListNode;
+
+typedef struct double_link_list_head
+{
+    int size;
+    DoubleLinkListNode *head;//头指针
+    DoubleLinkListNode *tail;//尾指针
+}DoubleLinkListHead;
+
 #endif /* List_h */

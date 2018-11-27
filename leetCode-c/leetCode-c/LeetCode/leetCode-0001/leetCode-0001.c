@@ -8,6 +8,12 @@
 
 #include "leetCode-0001.h"
 
+/*
+ 原数组排序
+ 
+ 我们用两个指针分别指向数组首尾两个数，如果两个数和正好为target，则将这两个数一起存入结果中。然后就是跳过重复数字的步骤了，两个指针都需要检测重复数字。如果两数之和小于target，则我们将左边那个指针i右移一位，使得指向的数字增大一些。同理，如果两数之和大于target，则我们将右边那个指针j左移一位，使得指向的数字减小一些
+ */
+
 #include <stdlib.h>
 #include <string.h>
 
@@ -16,7 +22,7 @@ struct object {
     int value;
 };
 
-int compare(const void *a, const void *b) {
+int compareObject(const void *a, const void *b) {
     return ((struct object*)a)->value - ((struct object*)b)->value;
 }
 
@@ -27,26 +33,26 @@ int* twoSum(int* nums, int numsSize, int target) {
         objs[i].value = nums[i];
     }
     
-    qsort(objs, numsSize, sizeof(*objs), compare);
+    qsort(objs, numsSize, sizeof(*objs), compareObject);
     
-    int i = 0;
-    int j = numsSize - 1;
-    while (i < j) {
-        int diff = target - objs[i].value;
-        if (diff < objs[j].value) {
-            while (--j > i && objs[j].value == objs[j + 1].value) {
+    int left = 0;
+    int right = numsSize - 1;
+    while (left < right) {
+        int diff = target - objs[left].value;
+        if (diff < objs[right].value) {
+            while (--right > left && objs[right].value == objs[right + 1].value) {
                 
             }
         }
-        else if (diff > objs[j].value) {
-            while (++i < j && objs[i].value == objs[i - 1].value) {
+        else if (diff > objs[right].value) {
+            while (++left < right && objs[left].value == objs[left - 1].value) {
                 
             }
         }
         else {
             int *ret = (int *)malloc(sizeof(int) * 2);
-            ret[0] = objs[i].key;
-            ret[1] = objs[j].key;
+            ret[0] = objs[left].key;
+            ret[1] = objs[right].key;
             return ret;
         }
     }

@@ -16,7 +16,17 @@
 #include "leetCode-0006.h"
 #include "leetCode-0007.h"
 #include "leetCode-0008.h"
+#include "leetCode-0009.h"
+#include "leetCode-0010.h"
+#include "leetCode-0011.h"
 
+#include "leetCode-0015.h"
+#include "leetCode-0016.h"
+
+#include "leetCode-0234.h"
+
+#include "ArrayInt.h"
+#include "LinkDoubleList.h"
 
 int main(int argc, const char * argv[]) {
     
@@ -27,7 +37,17 @@ int main(int argc, const char * argv[]) {
 //    test_0005();
 //    test_0006();
 //    test_0007();
-    test_0008();
+//    test_0008();
+//    test_0009();
+//    test_0010();
+//    test_0011();
+//    test_0015();
+//    test_0016();
+    
+    test_00234();
+    
+//    ArrayIntTest();
+//    LRU_list_test();
     
     return 0;
 }
