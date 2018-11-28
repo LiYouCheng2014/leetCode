@@ -55,7 +55,7 @@ bool isPalindrome1(struct ListNode *head) {
 /**
  回文链表
  */
-void test_00234(void)
+void test_0234(void)
 {
     int arr[4] = { 1, 2, 2, 1 };
 //    int arr[2] = { 1, 2 };

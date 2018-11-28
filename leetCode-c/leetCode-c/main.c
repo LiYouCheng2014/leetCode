@@ -23,6 +23,10 @@
 #include "leetCode-0015.h"
 #include "leetCode-0016.h"
 
+#include "leetCode-0019.h"
+
+#include "leetCode-0021.h"
+
 #include "leetCode-0234.h"
 
 #include "ArrayInt.h"
@@ -44,7 +48,11 @@ int main(int argc, const char * argv[]) {
 //    test_0015();
 //    test_0016();
     
-    test_00234();
+    test_0019();
+    
+//    test_0021();
+    
+//    test_0234();
     
 //    ArrayIntTest();
 //    LRU_list_test();
