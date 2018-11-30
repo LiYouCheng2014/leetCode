@@ -1,0 +1,29 @@
+//
+//  LYCLinkStack.h
+//  leetCode-c
+//
+//  Created by liyoucheng on 2018/11/29.
+//  Copyright © 2018年 Giga. All rights reserved.
+//
+
+#ifndef LYCLinkStack_h
+#define LYCLinkStack_h
+
+#include <stdio.h>
+
+typedef int LinkStackData;
+
+//节点
+typedef struct link_stack_node {
+    LinkStackData data;
+    struct link_stack_node *next;
+}LinkStackNode;
+
+typedef struct link_stack {
+    LinkStackNode *top;//栈顶
+    int count;//栈大小
+}LinkStack;
+
+void linkStackTest(void);
+
+#endif /* LYCLinkStack_h */

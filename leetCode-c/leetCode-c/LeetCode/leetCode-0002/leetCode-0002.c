@@ -10,7 +10,7 @@
 
 #include <stdlib.h>
 
-#include "LinkList.h"
+#include "LYCLinkList.h"
 
 struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
     struct ListNode *root = (struct ListNode *)malloc(sizeof(struct ListNode));
@@ -60,8 +60,8 @@ void test_0002() {
     //465
     int arrB[3] = { 5,6,4 };
     
-    struct ListNode *pa = createNode(arrA, sizeof(arrA)/sizeof(arrA[0]));
-    struct ListNode *pb = createNode(arrB, sizeof(arrB)/sizeof(arrB[0]));
+    struct ListNode *pa = linkListCreateHead(arrA, sizeof(arrA)/sizeof(arrA[0]));
+    struct ListNode *pb = linkListCreateHead(arrB, sizeof(arrB)/sizeof(arrB[0]));
     
     printNode(pa);
     printNode(pb);

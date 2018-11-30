@@ -33,12 +33,6 @@ typedef struct
     int cur;
 }Component, StaticLinkList[MAXSIZE];
 
-
-struct ListNode {
-    int val;
-    struct ListNode *next;
-};
-
 //双向链表
 typedef struct double_link_list_node
 {

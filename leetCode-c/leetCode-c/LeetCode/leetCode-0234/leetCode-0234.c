@@ -15,7 +15,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-#include "LinkList.h"
+#include "LYCLinkList.h"
 
 bool isPalindrome1(struct ListNode *head) {
     if (head == NULL || head->next == NULL) {
@@ -59,7 +59,7 @@ void test_0234(void)
 {
     int arr[4] = { 1, 2, 2, 1 };
 //    int arr[2] = { 1, 2 };
-    struct ListNode *head = createNode(arr, sizeof(arr) / sizeof(arr[0]));
+    struct ListNode *head = linkListCreateHead(arr, sizeof(arr) / sizeof(arr[0]));
     
     printNode(head);
 

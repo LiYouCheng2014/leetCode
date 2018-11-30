@@ -27,10 +27,20 @@
 
 #include "leetCode-0021.h"
 
+#include "leetCode-0141.h"
+#include "leetCode-0142.h"
+
+#include "leetCode-0206.h"
+
 #include "leetCode-0234.h"
+
+#include "leetCode-0876.h"
 
 #include "ArrayInt.h"
 #include "LinkDoubleList.h"
+
+#include "LYCArrayStack.h"
+#include "LYCLinkStack.h"
 
 int main(int argc, const char * argv[]) {
     
@@ -48,11 +58,19 @@ int main(int argc, const char * argv[]) {
 //    test_0015();
 //    test_0016();
     
-    test_0019();
+//    test_0019();
     
 //    test_0021();
+//    test_0141();
+//    test_0142();
+    
+//    test_0206();
     
 //    test_0234();
+    
+//    test_0876();
+//    arrayStackTest();
+    linkStackTest();
     
 //    ArrayIntTest();
 //    LRU_list_test();

@@ -10,7 +10,7 @@
 
 #include <stdlib.h>
 
-#include "LinkList.h"
+#include "LYCLinkList.h"
 
 struct ListNode* removeNthFromEnd(struct ListNode* head, int n) {
     
@@ -38,7 +38,7 @@ struct ListNode* removeNthFromEnd(struct ListNode* head, int n) {
 
 void test_0019(void) {
     int arr1[5] ={ 5, 4, 3, 2, 1 };
-    struct ListNode *l1 = createNode(arr1, sizeof(arr1) / sizeof(arr1[0]));
+    struct ListNode *l1 = linkListCreateHead(arr1, sizeof(arr1) / sizeof(arr1[0]));
     int n = 2;
     
     printNode(l1);

@@ -10,7 +10,7 @@
 
 #include <stdlib.h>
 
-#include "LinkList.h"
+#include "LYCLinkList.h"
 
 struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2) {
     if (l1 == NULL) {
@@ -55,8 +55,8 @@ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2) {
 void test_0021(void) {
     int arr1[3] ={ 4, 2, 1 };
     int arr2[3] ={ 4, 3, 1 };
-    struct ListNode *l1 = createNode(arr1, sizeof(arr1) / sizeof(arr1[0]));
-    struct ListNode *l2 = createNode(arr2, sizeof(arr2) / sizeof(arr2[0]));
+    struct ListNode *l1 = linkListCreateHead(arr1, sizeof(arr1) / sizeof(arr1[0]));
+    struct ListNode *l2 = linkListCreateHead(arr2, sizeof(arr2) / sizeof(arr2[0]));
     printNode(l1);
     printNode(l2);
     
