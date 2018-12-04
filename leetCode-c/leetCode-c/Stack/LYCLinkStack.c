@@ -9,15 +9,11 @@
 #include "LYCLinkStack.h"
 
 #include <stdlib.h>
-#include <stdbool.h>
 
 int linkStackSize(LinkStack *stack) {
     return stack->count;
 }
 
-bool linkStackIsEmpty(LinkStack *stack) {
-    return stack->count == 0;
-}
 
 LinkStack *linkStackCreate() {
     LinkStack *stack = NULL;
@@ -33,18 +29,10 @@ LinkStack *linkStackCreate() {
     return stack;
 }
 
-void linkStackDestory(LinkStack *stack) {
-    LinkStackNode *p = NULL;
-    
-    while (stack->top) {
-        p = stack->top;
-        stack->top = p->next;
-        stack->count--;
-        free(p);
-    }
-    
-    free(stack);
+bool linkStackIsEmpty(LinkStack *stack) {
+    return stack->count == 0;
 }
+
 
 int linkStackPush(LinkStack *stack, LinkStackData data) {
     LinkStackNode *p = NULL;
@@ -59,6 +47,17 @@ int linkStackPush(LinkStack *stack, LinkStackData data) {
     stack->top = p;
     stack->count++;
     
+    return 0;
+}
+
+int linkStackTop(LinkStack *stack, LinkStackData *data) {
+    if (linkStackIsEmpty(stack)) {
+        return -1;
+    }
+    
+    LinkStackNode *p = stack->top;
+    *data = p->data;
+ 
     return 0;
 }
 
@@ -77,8 +76,21 @@ int linkStackPop(LinkStack *stack, LinkStackData *data) {
     return 0;
 }
 
+void linkStackDestory(LinkStack *stack) {
+    LinkStackNode *p = NULL;
+    
+    while (stack->top) {
+        p = stack->top;
+        stack->top = p->next;
+        stack->count--;
+        free(p);
+    }
+    
+    free(stack);
+}
+
 void linkStackDump(LinkStack *stack) {
-     LinkStackNode *p = stack->top;
+    LinkStackNode *p = stack->top;
     printf("stack: size => %d\n",stack->count);
     while (p) {
         printf("%d\n",p->data);

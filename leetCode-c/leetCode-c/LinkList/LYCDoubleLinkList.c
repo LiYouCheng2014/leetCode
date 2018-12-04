@@ -1,37 +1,23 @@
 //
-//  LinkDoubleList.c
+//  LYCDoubleLinkList.c
 //  leetCode-c
 //
-//  Created by liyoucheng on 2018/11/27.
+//  Created by liyoucheng on 2018/12/1.
 //  Copyright © 2018年 Giga. All rights reserved.
 //
 
-#include "LinkDoubleList.h"
+#include "LYCDoubleLinkList.h"
 
 #include <stdlib.h>
 #include <string.h>
 
-#include "List.h"
-
-/**
- 创建双向链表
- 
- @param list 双向链表
- */
-void double_link_list_create(DoubleLinkListHead *list)
-{
+void doubleLinkListCreate(DoubleLinkList *list) {
     list->size = 0;
     list->head = NULL;
     list->tail = NULL;
 }
 
-/**
- 销毁双向链表
- 
- @param list 双向链表
- */
-void double_link_list_destory(DoubleLinkListHead *list)
-{
+void doubleLinkListDestory(DoubleLinkList *list) {
     DoubleLinkListNode *temp = NULL;
     while (list->size > 0) {
         temp = list->head;
@@ -40,20 +26,10 @@ void double_link_list_destory(DoubleLinkListHead *list)
         list->size--;
     }
     
-    memset(list, 0, sizeof(DoubleLinkListHead));
+    memset(list, 0, sizeof(DoubleLinkList));
 }
 
-
-/**
- 头部插入
- 
- @param list 双向链表
- @param node 需插入的节点
- @param data 需插入的数据
- @return 是否插入成功
- */
-int double_link_list_insert_head(DoubleLinkListHead *list, DoubleLinkListNode *node, int data)
-{
+int doubleLinkListInsertHead(DoubleLinkList *list, DoubleLinkListNode *node, int data) {
     if (node == NULL) {
         node = (DoubleLinkListNode *)malloc(sizeof(DoubleLinkListNode));
         if (node == NULL) {
@@ -80,14 +56,7 @@ int double_link_list_insert_head(DoubleLinkListHead *list, DoubleLinkListNode *n
     return 0;
 }
 
-/**
- 移除尾部节点
- 
- @param list 双向链表
- @return 移除的尾部节点
- */
-DoubleLinkListNode *double_link_list_remove_tail(DoubleLinkListHead *list)
-{
+DoubleLinkListNode *doubleLinkListRemoveTail(DoubleLinkList *list) {
     DoubleLinkListNode *node = NULL;
     if (list->size == 0) {
         return NULL;
@@ -107,14 +76,7 @@ DoubleLinkListNode *double_link_list_remove_tail(DoubleLinkListHead *list)
     return node;
 }
 
-/**
- 移除节点
- 
- @param list 双向链表
- @param node 移除的节点
- */
-void double_link_list_remove_node(DoubleLinkListHead *list, DoubleLinkListNode *node)
-{
+void doubleLinkListRemoveNode(DoubleLinkList *list, DoubleLinkListNode *node) {
     if ((list == NULL) || (node == NULL)) {
         return;
     }
@@ -136,19 +98,11 @@ void double_link_list_remove_node(DoubleLinkListHead *list, DoubleLinkListNode *
     node->next = NULL;
     
     if (list->size == 0) {
-        memset(list, 0, sizeof(DoubleLinkListHead));
+        memset(list, 0, sizeof(DoubleLinkList));
     }
 }
 
-/**
- 查找节点
- 
- @param list 双向链表
- @param data 查找的数据
- @return 查找到的节点
- */
-DoubleLinkListNode *double_link_list_search(DoubleLinkListHead *list, int data)
-{
+DoubleLinkListNode *doubleLinkListSearch(DoubleLinkList *list, int data) {
     DoubleLinkListNode *node = list->head;
     while (node != NULL) {
         if (node->data == data) {
@@ -159,13 +113,7 @@ DoubleLinkListNode *double_link_list_search(DoubleLinkListHead *list, int data)
     return NULL;
 }
 
-/**
- 遍历双向链表
- 
- @param list 双向链表
- */
-void double_link_list_dump(DoubleLinkListHead *list)
-{
+void doubleLinkListDump(DoubleLinkList *list) {
     int count = 0;
     printf("打印链表\n");
     DoubleLinkListNode *node = list->head;
@@ -183,68 +131,56 @@ void double_link_list_dump(DoubleLinkListHead *list)
  如果此时缓存已满，则链表尾结点删除，将新的数据结点插入链表的头部。
  */
 
-/**
- LRU缓存淘汰算法
- 
- @param list 双向链表
- @param data 数据
- */
-void LRU_list(DoubleLinkListHead *list, int data)
-{
-    DoubleLinkListNode *node = double_link_list_search(list, data);
+void doubleLinkListLRU(DoubleLinkList *list, int data) {
+    DoubleLinkListNode *node = doubleLinkListSearch(list, data);
     if (node != NULL) {
-        double_link_list_remove_node(list, node);
+        doubleLinkListRemoveNode(list, node);
     }
     else if (list->size >= 4) {
-        node = double_link_list_remove_tail(list);
+        node = doubleLinkListRemoveTail(list);
     }
     
-    double_link_list_insert_head(list, node, data);
+    doubleLinkListInsertHead(list, node, data);
 }
 
-/**
- LRU缓存淘汰算法测试
- */
-void LRU_list_test()
-{
-    DoubleLinkListHead list = {0};
+void doubleLinkListTest() {
+    DoubleLinkList list = {0};
     DoubleLinkListNode *node = NULL;
     
-    double_link_list_create(&list);
+    doubleLinkListCreate(&list);
     
     printf("插入 1 2 3\n");
-    double_link_list_insert_head(&list, NULL, 1);
-    double_link_list_insert_head(&list, NULL, 2);
-    double_link_list_insert_head(&list, NULL, 3);
+    doubleLinkListInsertHead(&list, NULL, 1);
+    doubleLinkListInsertHead(&list, NULL, 2);
+    doubleLinkListInsertHead(&list, NULL, 3);
     
-    double_link_list_dump(&list);
+    doubleLinkListDump(&list);
     
-    node = double_link_list_remove_tail(&list);
+    node = doubleLinkListRemoveTail(&list);
     if (node != NULL) {
         printf("删除 %d\n",node->data);
     }
-    double_link_list_insert_head(&list, node, 4);
+    doubleLinkListInsertHead(&list, node, 4);
     
-    double_link_list_dump(&list);
+    doubleLinkListDump(&list);
     
-    LRU_list(&list, 5);
-    double_link_list_dump(&list);
+    doubleLinkListLRU(&list, 5);
+    doubleLinkListDump(&list);
     
-    LRU_list(&list, 6);
-    double_link_list_dump(&list);
+    doubleLinkListLRU(&list, 6);
+    doubleLinkListDump(&list);
     
-    LRU_list(&list, 7);
-    double_link_list_dump(&list);
+    doubleLinkListLRU(&list, 7);
+    doubleLinkListDump(&list);
     
-    LRU_list(&list, 5);
-    double_link_list_dump(&list);
+    doubleLinkListLRU(&list, 5);
+    doubleLinkListDump(&list);
     
     while (list.size > 0) {
-        node = double_link_list_remove_tail(&list);
+        node = doubleLinkListRemoveTail(&list);
         if (node != NULL) {
             printf("删除 %d\n", node->data);
             free(node);
         }
     }
 }
-

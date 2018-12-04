@@ -26,12 +26,28 @@ struct ListNode* reverseList(struct ListNode* head) {
     return prev;
 }
 
+struct ListNode* reverseList2(struct ListNode* head) {
+    
+    if (!head || !head->next) {
+        return head;
+    }
+    
+    struct ListNode *p = head;
+    head = reverseList2(p->next);
+    p->next->next = p;
+    p->next = NULL;
+    
+    return head;
+}
+
 void test_0206(void)
 {
     int arr[5] = { 5, 4, 3, 2, 1 };
     struct ListNode *l1 = linkListCreateHead(arr, sizeof(arr) / sizeof(arr[0]));
     printNode(l1);
     
-    struct ListNode *ret = reverseList(l1);
-    printNode(ret);
+//    struct ListNode *ret = reverseList(l1);
+    struct ListNode *ret1 = reverseList2(l1);
+//    printNode(ret);
+    printNode(ret1);
 }

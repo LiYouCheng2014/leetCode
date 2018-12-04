@@ -24,7 +24,7 @@
 #include "leetCode-0016.h"
 
 #include "leetCode-0019.h"
-
+#include "leetCode-0020.h"
 #include "leetCode-0021.h"
 
 #include "leetCode-0141.h"
@@ -32,15 +32,26 @@
 
 #include "leetCode-0206.h"
 
+#include "leetCode-0215.h"
+
+#include "leetCode-0225.h"
+
+#include "leetCode-0232.h"
+
 #include "leetCode-0234.h"
 
 #include "leetCode-0876.h"
 
 #include "ArrayInt.h"
-#include "LinkDoubleList.h"
+#include "LYCDoubleLinkList.h"
 
 #include "LYCArrayStack.h"
 #include "LYCLinkStack.h"
+
+#include "LYCArrayQueue.h"
+#include "LYCLinkQueue.h"
+
+#include "LYCSort.h"
 
 int main(int argc, const char * argv[]) {
     
@@ -59,21 +70,28 @@ int main(int argc, const char * argv[]) {
 //    test_0016();
     
 //    test_0019();
-    
+//    test_0020();
 //    test_0021();
 //    test_0141();
 //    test_0142();
     
 //    test_0206();
+    test_0215();
     
+//    test_0225();
+//    test_0232();
 //    test_0234();
     
 //    test_0876();
 //    arrayStackTest();
-    linkStackTest();
+//    linkStackTest();
+//    arrayQueueTest();
+//    linkQueueTest();
     
 //    ArrayIntTest();
 //    LRU_list_test();
+    
+//    testSort();
     
     return 0;
 }

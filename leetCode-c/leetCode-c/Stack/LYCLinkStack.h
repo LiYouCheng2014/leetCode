@@ -10,8 +10,9 @@
 #define LYCLinkStack_h
 
 #include <stdio.h>
+#include <stdbool.h>
 
-typedef int LinkStackData;
+typedef char LinkStackData;
 
 //节点
 typedef struct link_stack_node {
@@ -23,6 +24,13 @@ typedef struct link_stack {
     LinkStackNode *top;//栈顶
     int count;//栈大小
 }LinkStack;
+
+LinkStack *linkStackCreate(void);
+bool linkStackIsEmpty(LinkStack *stack);
+int linkStackPush(LinkStack *stack, LinkStackData data);
+int linkStackPop(LinkStack *stack, LinkStackData *data);
+int linkStackTop(LinkStack *stack, LinkStackData *data);
+void linkStackDestory(LinkStack *stack);
 
 void linkStackTest(void);
 
