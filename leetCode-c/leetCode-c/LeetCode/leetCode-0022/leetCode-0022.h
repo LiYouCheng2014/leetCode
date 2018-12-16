@@ -11,6 +11,6 @@
 
 #include <stdio.h>
 
-void test(void);
+void test_0021(void);
 
 #endif /* leetCode_0022_h */

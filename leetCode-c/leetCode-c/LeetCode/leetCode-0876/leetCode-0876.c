@@ -24,8 +24,7 @@ struct ListNode* middleNode(struct ListNode* head) {
     return slow;
 }
 
-void test_0876(void)
-{
+void test_0876(void) {
     int arr[5] = { 5, 4, 3, 2, 1 };
     struct ListNode *l1 = linkListCreateHead(arr, sizeof(arr) / sizeof(arr[0]));
     printNode(l1);

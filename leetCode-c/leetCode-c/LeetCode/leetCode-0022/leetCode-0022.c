@@ -48,7 +48,7 @@ char** generateParenthesis(int n, int* returnSize) {
     return result;
 }
 
-void test()
+void test_0022(void)
 {
     int count = 0;
     char **a = generateParenthesis(3, &count);
