@@ -12,11 +12,7 @@
 #include <stdbool.h>
 #include <string.h>
 
-struct TreeNode {
-    int val;
-    struct TreeNode *left;
-    struct TreeNode *right;
-};
+#include "Tree.h"
 
 struct link_queue_node102 {
     struct TreeNode *data;

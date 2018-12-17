@@ -29,17 +29,28 @@
 #include "leetCode-0019.h"
 #include "leetCode-0020.h"
 #include "leetCode-0021.h"
+#include "leetCode-0022.h"
+//#include "leetCode-0023.h"
+#include "leetCode-0024.h"
+#include "leetCode-0025.h"
 
 #include "leetCode-0033.h"
 
+#include "leetCode-0050.h"
 #include "leetCode-0051.h"
 
 #include "leetCode-0069.h"
 
+#include "leetCode-0098.h"
+
 #include "leetCode-0102.h"
+
+#include "leetCode-0122.h"
 
 #include "leetCode-0141.h"
 #include "leetCode-0142.h"
+
+#include "leetCode-0169.h"
 
 #include "leetCode-0206.h"
 
@@ -50,6 +61,12 @@
 #include "leetCode-0232.h"
 
 #include "leetCode-0234.h"
+#include "leetCode-0235.h"
+#include "leetCode-0236.h"
+
+#include "leetCode-0239.h"
+
+#include "leetCode-0242.h"
 
 #include "leetCode-0876.h"
 
@@ -90,16 +107,29 @@ int main(int argc, const char * argv[]) {
 //    test_0019();
 //    test_0020();
 //    test_0021();
+//    test_0022();
+//    test_0024();
+//    test_0025();
     
 //    test_0033();
     
+//    test_0050();
 //    test_0051();
     
 //    test_0069();
     
-    test_0102();
+//    test_0098();
+    
+//    test_0102();
+    
+    
+//    test_0122();
+    
 //    test_0141();
 //    test_0142();
+    
+    
+//    test_0169();
     
 //    test_0206();
 //    test_0215();
@@ -107,6 +137,12 @@ int main(int argc, const char * argv[]) {
 //    test_0225();
 //    test_0232();
 //    test_0234();
+//    test_0235();
+//    test_0236();
+//    
+//    test_0239();
+//    
+//    test_0242();
     
 //    test_0876();
 //    arrayStackTest();

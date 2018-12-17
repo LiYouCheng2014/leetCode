@@ -11,6 +11,12 @@
 
 #include "comman.h"
 
+struct TreeNode {
+    int val;
+    struct TreeNode *left;
+    struct TreeNode *right;
+};
+
 //双亲表示法
 
 typedef char TElemType;
@@ -81,12 +87,12 @@ typedef struct BiThrNode
     PointerTag Rtag;
 }BiThrNode, *BiThrTree;
 
-//leetCode
-struct TreeNode {
-    int val;
-    struct TreeNode *left;
-    struct TreeNode *right;
-};
+////leetCode
+//struct TreeNode {
+//    int val;
+//    struct TreeNode *left;
+//    struct TreeNode *right;
+//};
 
 
 #endif /* Tree_h */

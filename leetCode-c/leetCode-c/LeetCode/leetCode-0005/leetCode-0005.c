@@ -15,12 +15,12 @@
 
 //最长子串的长度是半径减1，起始位置是中间位置减去半径再除以2。
 //p[i] = mx > i ? min(p[2 * id - i], mx - i) : 1;
-//http://www.cnblogs.com/grandyang/p/4475985.html
 int manacher(char *s, char output[])
 {
     int i, j;
     char t[3000] = { '\0' };
     
+    // 填充$和#
     t[0] = '$';
     for (i = 0; s[i] != '\0'; i++) {
         t[(i<<1)+1] = '#';
@@ -50,6 +50,7 @@ int manacher(char *s, char output[])
             mx = i+p[i];
             id = i;
         }
+        
         if (resLen < p[i]-1) {
             resLen = p[i]-1;
             resCenter = i;
@@ -76,7 +77,7 @@ char *longestPalindrome(char *s)
     }
     
     char *palindrome = malloc(2000);
-    memset(palindrome, 0, sizeof(palindrome));
+    memset(palindrome, 0, sizeof(malloc(2000)));
     
     int size = manacher(s, palindrome);
     palindrome[size] = '\0';
