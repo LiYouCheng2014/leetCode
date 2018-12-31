@@ -47,10 +47,15 @@
 
 #include "leetCode-0122.h"
 
+#include "leetCode-0136.h"
+#include "leetCode-0137.h"
+
 #include "leetCode-0141.h"
 #include "leetCode-0142.h"
 
 #include "leetCode-0169.h"
+
+#include "leetCode-0191.h"
 
 #include "leetCode-0206.h"
 
@@ -63,6 +68,8 @@
 #include "leetCode-0234.h"
 #include "leetCode-0235.h"
 #include "leetCode-0236.h"
+
+#include "leetCode-0237.h"
 
 #include "leetCode-0239.h"
 
@@ -83,6 +90,8 @@
 #include "LYCSearch.h"
 
 #include "LYCLinkTree.h"
+
+#include "kmp.h"
 
 int main(int argc, const char * argv[]) {
     
@@ -125,11 +134,15 @@ int main(int argc, const char * argv[]) {
     
 //    test_0122();
     
+//    test_0136();
+    test_0137();
 //    test_0141();
 //    test_0142();
     
     
 //    test_0169();
+    
+//    test_0191();
     
 //    test_0206();
 //    test_0215();
@@ -139,7 +152,8 @@ int main(int argc, const char * argv[]) {
 //    test_0234();
 //    test_0235();
 //    test_0236();
-//    
+//    test_0237();
+    
 //    test_0239();
 //    
 //    test_0242();
@@ -157,6 +171,8 @@ int main(int argc, const char * argv[]) {
 //    testSearch();
     
 //    testLinkTree();
+    
+//    testKMP();
     
     return 0;
 }
