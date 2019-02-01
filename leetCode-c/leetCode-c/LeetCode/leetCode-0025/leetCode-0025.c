@@ -74,9 +74,11 @@ struct ListNode *reverseKGroup(struct ListNode *head, int k)
         }
         else {
             if (root == NULL) {
+                
                 root = tempHead;
             }
             else {
+                
                 p->next = tempHead;
             }
         }

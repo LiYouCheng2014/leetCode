@@ -40,6 +40,20 @@ struct ListNode* reverseList2(struct ListNode* head) {
     return head;
 }
 
+struct ListNode* reverseList3(struct ListNode* head) {
+    
+    if (head != NULL || head->next != NULL) {
+        
+        return head;
+    }
+    
+    struct ListNode *node = reverseList(head->next);
+    head->next->next = head;
+    head->next = NULL;
+    
+    return node;
+}
+
 void test_0206(void)
 {
     int arr[5] = { 5, 4, 3, 2, 1 };

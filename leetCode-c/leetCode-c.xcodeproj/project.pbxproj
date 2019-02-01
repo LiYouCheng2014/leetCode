@@ -52,6 +52,17 @@
 		0499408D21D8E1F20013AAF9 /* kmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 0499408C21D8E1F20013AAF9 /* kmp.c */; };
 		0499409121DA0AF50013AAF9 /* leetCode-0237.c in Sources */ = {isa = PBXBuildFile; fileRef = 0499409021DA0AF50013AAF9 /* leetCode-0237.c */; };
 		0499409521DA0EC70013AAF9 /* leetCode-0137.c in Sources */ = {isa = PBXBuildFile; fileRef = 0499409421DA0EC70013AAF9 /* leetCode-0137.c */; };
+		0499412421E971270013AAF9 /* leetCode-0138.c in Sources */ = {isa = PBXBuildFile; fileRef = 0499412321E971270013AAF9 /* leetCode-0138.c */; };
+		0499412821F0C0E10013AAF9 /* Heap.c in Sources */ = {isa = PBXBuildFile; fileRef = 0499412721F0C0E10013AAF9 /* Heap.c */; };
+		049942CC21F328D20013AAF9 /* leetCode-0239.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 049942CA21F328D20013AAF9 /* leetCode-0239.cpp */; };
+		0499440521F49ECE0013AAF9 /* leetCode-0242.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0499440321F49ECE0013AAF9 /* leetCode-0242.cpp */; };
+		0499440821F4A1930013AAF9 /* leetCode-0001.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0499440621F4A1930013AAF9 /* leetCode-0001.cpp */; };
+		0499440B21F4A79F0013AAF9 /* leetCode-0015.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0499440921F4A79F0013AAF9 /* leetCode-0015.cpp */; };
+		0499440E21F4AC500013AAF9 /* leetCode-0018.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0499440C21F4AC500013AAF9 /* leetCode-0018.cpp */; };
+		0499441121F600E20013AAF9 /* leetCode-0098.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0499440F21F600E20013AAF9 /* leetCode-0098.cpp */; };
+		0499441721F8661A0013AAF9 /* leetCode-0236.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0499441521F8661A0013AAF9 /* leetCode-0236.cpp */; };
+		0499441A21F86BB40013AAF9 /* leetCode-0235.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0499441821F86BB40013AAF9 /* leetCode-0235.cpp */; };
+		0499441D21FDBE490013AAF9 /* leetCode-0050.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0499441B21FDBE490013AAF9 /* leetCode-0050.cpp */; };
 		04A48D6F21BA9F730060C723 /* LYCSearch.c in Sources */ = {isa = PBXBuildFile; fileRef = 04A48D6E21BA9F730060C723 /* LYCSearch.c */; };
 		04A48D7321BAA7850060C723 /* leetCode-0069.c in Sources */ = {isa = PBXBuildFile; fileRef = 04A48D7221BAA7850060C723 /* leetCode-0069.c */; };
 		04A48D7721BBE3230060C723 /* leetCode-0033.c in Sources */ = {isa = PBXBuildFile; fileRef = 04A48D7621BBE3230060C723 /* leetCode-0033.c */; };
@@ -197,6 +208,28 @@
 		0499409021DA0AF50013AAF9 /* leetCode-0237.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "leetCode-0237.c"; sourceTree = "<group>"; };
 		0499409321DA0EC70013AAF9 /* leetCode-0137.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "leetCode-0137.h"; sourceTree = "<group>"; };
 		0499409421DA0EC70013AAF9 /* leetCode-0137.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "leetCode-0137.c"; sourceTree = "<group>"; };
+		0499412221E971270013AAF9 /* leetCode-0138.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "leetCode-0138.h"; sourceTree = "<group>"; };
+		0499412321E971270013AAF9 /* leetCode-0138.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "leetCode-0138.c"; sourceTree = "<group>"; };
+		0499412621F0C0E10013AAF9 /* Heap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Heap.h; sourceTree = "<group>"; };
+		0499412721F0C0E10013AAF9 /* Heap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Heap.c; sourceTree = "<group>"; };
+		049942CA21F328D20013AAF9 /* leetCode-0239.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "leetCode-0239.cpp"; sourceTree = "<group>"; };
+		049942CB21F328D20013AAF9 /* leetCode-0239.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "leetCode-0239.hpp"; sourceTree = "<group>"; };
+		0499440321F49ECE0013AAF9 /* leetCode-0242.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "leetCode-0242.cpp"; sourceTree = "<group>"; };
+		0499440421F49ECE0013AAF9 /* leetCode-0242.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "leetCode-0242.hpp"; sourceTree = "<group>"; };
+		0499440621F4A1930013AAF9 /* leetCode-0001.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "leetCode-0001.cpp"; sourceTree = "<group>"; };
+		0499440721F4A1930013AAF9 /* leetCode-0001.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "leetCode-0001.hpp"; sourceTree = "<group>"; };
+		0499440921F4A79F0013AAF9 /* leetCode-0015.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "leetCode-0015.cpp"; sourceTree = "<group>"; };
+		0499440A21F4A79F0013AAF9 /* leetCode-0015.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "leetCode-0015.hpp"; sourceTree = "<group>"; };
+		0499440C21F4AC500013AAF9 /* leetCode-0018.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "leetCode-0018.cpp"; sourceTree = "<group>"; };
+		0499440D21F4AC500013AAF9 /* leetCode-0018.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "leetCode-0018.hpp"; sourceTree = "<group>"; };
+		0499440F21F600E20013AAF9 /* leetCode-0098.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "leetCode-0098.cpp"; sourceTree = "<group>"; };
+		0499441021F600E20013AAF9 /* leetCode-0098.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "leetCode-0098.hpp"; sourceTree = "<group>"; };
+		0499441521F8661A0013AAF9 /* leetCode-0236.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "leetCode-0236.cpp"; sourceTree = "<group>"; };
+		0499441621F8661A0013AAF9 /* leetCode-0236.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "leetCode-0236.hpp"; sourceTree = "<group>"; };
+		0499441821F86BB40013AAF9 /* leetCode-0235.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "leetCode-0235.cpp"; sourceTree = "<group>"; };
+		0499441921F86BB40013AAF9 /* leetCode-0235.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "leetCode-0235.hpp"; sourceTree = "<group>"; };
+		0499441B21FDBE490013AAF9 /* leetCode-0050.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "leetCode-0050.cpp"; sourceTree = "<group>"; };
+		0499441C21FDBE490013AAF9 /* leetCode-0050.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "leetCode-0050.hpp"; sourceTree = "<group>"; };
 		04A48D6D21BA9F730060C723 /* LYCSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYCSearch.h; sourceTree = "<group>"; };
 		04A48D6E21BA9F730060C723 /* LYCSearch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LYCSearch.c; sourceTree = "<group>"; };
 		04A48D7121BAA7850060C723 /* leetCode-0069.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "leetCode-0069.h"; sourceTree = "<group>"; };
@@ -354,6 +387,7 @@
 				04BD8D0821C660EE00D703FD /* leetCode-0235 */,
 				04BD8D7721CE610200D703FD /* leetCode-0191 */,
 				04BD8D0421C660D900D703FD /* leetCode-0169 */,
+				0499412121E971120013AAF9 /* leetCode-0138 */,
 				0499409221DA0EB90013AAF9 /* leetCode-0137 */,
 				04BD8D7B21CE654C00D703FD /* leetCode-0136 */,
 				04BD8D0021C660CE00D703FD /* leetCode-0122 */,
@@ -451,6 +485,8 @@
 			children = (
 				045FA8DB21A4CF610030ED7B /* leetCode-0001.h */,
 				045FA8DC21A4CF610030ED7B /* leetCode-0001.c */,
+				0499440621F4A1930013AAF9 /* leetCode-0001.cpp */,
+				0499440721F4A1930013AAF9 /* leetCode-0001.hpp */,
 			);
 			path = "leetCode-0001";
 			sourceTree = "<group>";
@@ -567,6 +603,8 @@
 			children = (
 				045FA93421AD27DA0030ED7B /* leetCode-0015.h */,
 				045FA93321AD27DA0030ED7B /* leetCode-0015.c */,
+				0499440921F4A79F0013AAF9 /* leetCode-0015.cpp */,
+				0499440A21F4A79F0013AAF9 /* leetCode-0015.hpp */,
 			);
 			path = "leetCode-0015";
 			sourceTree = "<group>";
@@ -715,6 +753,15 @@
 			path = "leetCode-0137";
 			sourceTree = "<group>";
 		};
+		0499412121E971120013AAF9 /* leetCode-0138 */ = {
+			isa = PBXGroup;
+			children = (
+				0499412221E971270013AAF9 /* leetCode-0138.h */,
+				0499412321E971270013AAF9 /* leetCode-0138.c */,
+			);
+			path = "leetCode-0138";
+			sourceTree = "<group>";
+		};
 		04A48D6C21BA9F660060C723 /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -747,6 +794,8 @@
 			children = (
 				04A48DA621BFF3D70060C723 /* LYCHeap.h */,
 				04A48DA721BFF3D70060C723 /* LYCHeap.c */,
+				0499412621F0C0E10013AAF9 /* Heap.h */,
+				0499412721F0C0E10013AAF9 /* Heap.c */,
 			);
 			path = Heap;
 			sourceTree = "<group>";
@@ -810,6 +859,8 @@
 			children = (
 				04BD8CED21C65A0B00D703FD /* leetCode-0018.h */,
 				04BD8CEE21C65A0B00D703FD /* leetCode-0018.c */,
+				0499440C21F4AC500013AAF9 /* leetCode-0018.cpp */,
+				0499440D21F4AC500013AAF9 /* leetCode-0018.hpp */,
 			);
 			path = "leetCode-0018";
 			sourceTree = "<group>";
@@ -837,6 +888,8 @@
 			children = (
 				04BD8CF921C65E5A00D703FD /* leetCode-0050.h */,
 				04BD8CFA21C65E5A00D703FD /* leetCode-0050.c */,
+				0499441B21FDBE490013AAF9 /* leetCode-0050.cpp */,
+				0499441C21FDBE490013AAF9 /* leetCode-0050.hpp */,
 			);
 			path = "leetCode-0050";
 			sourceTree = "<group>";
@@ -846,6 +899,8 @@
 			children = (
 				04BD8CFD21C660CA00D703FD /* leetCode-0098.h */,
 				04BD8CFE21C660CA00D703FD /* leetCode-0098.c */,
+				0499440F21F600E20013AAF9 /* leetCode-0098.cpp */,
+				0499441021F600E20013AAF9 /* leetCode-0098.hpp */,
 			);
 			path = "leetCode-0098";
 			sourceTree = "<group>";
@@ -873,6 +928,8 @@
 			children = (
 				04BD8D0921C660FB00D703FD /* leetCode-0235.h */,
 				04BD8D0A21C660FB00D703FD /* leetCode-0235.c */,
+				0499441821F86BB40013AAF9 /* leetCode-0235.cpp */,
+				0499441921F86BB40013AAF9 /* leetCode-0235.hpp */,
 			);
 			path = "leetCode-0235";
 			sourceTree = "<group>";
@@ -882,6 +939,8 @@
 			children = (
 				04BD8D0E21C6611100D703FD /* leetCode-0236.h */,
 				04BD8D0F21C6611100D703FD /* leetCode-0236.c */,
+				0499441521F8661A0013AAF9 /* leetCode-0236.cpp */,
+				0499441621F8661A0013AAF9 /* leetCode-0236.hpp */,
 			);
 			path = "leetCode-0236";
 			sourceTree = "<group>";
@@ -891,6 +950,8 @@
 			children = (
 				04BD8D1221C6612000D703FD /* leetCode-0239.h */,
 				04BD8D1321C6612000D703FD /* leetCode-0239.c */,
+				049942CA21F328D20013AAF9 /* leetCode-0239.cpp */,
+				049942CB21F328D20013AAF9 /* leetCode-0239.hpp */,
 			);
 			path = "leetCode-0239";
 			sourceTree = "<group>";
@@ -900,6 +961,8 @@
 			children = (
 				04BD8D1621C6613400D703FD /* leetCode-0242.h */,
 				04BD8D1721C6613400D703FD /* leetCode-0242.c */,
+				0499440321F49ECE0013AAF9 /* leetCode-0242.cpp */,
+				0499440421F49ECE0013AAF9 /* leetCode-0242.hpp */,
 			);
 			path = "leetCode-0242";
 			sourceTree = "<group>";
@@ -1003,6 +1066,7 @@
 				04BD8CBD21C4F41900D703FD /* leetCode-0051.c in Sources */,
 				045FACC921B3C0DA0030ED7B /* LYCSort.c in Sources */,
 				045FA92521AC2A9D0030ED7B /* leetCode-0104.c in Sources */,
+				0499412821F0C0E10013AAF9 /* Heap.c in Sources */,
 				045FA92621AC2A9D0030ED7B /* leetCode-0022.c in Sources */,
 				045FAC9D21B022030030ED7B /* LYCArrayStack.c in Sources */,
 				045FACCD21B3DED80030ED7B /* leetCode-0215.c in Sources */,
@@ -1010,6 +1074,7 @@
 				045FA98521AE7EE40030ED7B /* leetCode-0021.c in Sources */,
 				045FA92721AC2A9D0030ED7B /* leetCode-0004.c in Sources */,
 				04BD8D7A21CE611100D703FD /* leetCode-0191.c in Sources */,
+				0499441721F8661A0013AAF9 /* leetCode-0236.cpp in Sources */,
 				04A48DA821BFF3D70060C723 /* LYCHeap.c in Sources */,
 				045FA92821AC2A9D0030ED7B /* leetCode-0003.c in Sources */,
 				045FA92921AC2A9D0030ED7B /* leetCode-0002.c in Sources */,
@@ -1021,16 +1086,22 @@
 				045FA92D21AC2A9D0030ED7B /* ArrayList.c in Sources */,
 				045FA99821AE980D0030ED7B /* leetCode-0876.c in Sources */,
 				0499409121DA0AF50013AAF9 /* leetCode-0237.c in Sources */,
+				0499440521F49ECE0013AAF9 /* leetCode-0242.cpp in Sources */,
 				04BD8D1821C6613400D703FD /* leetCode-0242.c in Sources */,
+				0499441A21F86BB40013AAF9 /* leetCode-0235.cpp in Sources */,
 				0499409521DA0EC70013AAF9 /* leetCode-0137.c in Sources */,
 				045FA92E21AC2A9D0030ED7B /* ArrayDoubleStack.c in Sources */,
+				0499440B21F4A79F0013AAF9 /* leetCode-0015.cpp in Sources */,
 				04A48D9E21BEA4160060C723 /* LYCListHash.c in Sources */,
 				045FA93521AD27DA0030ED7B /* leetCode-0015.c in Sources */,
+				0499440E21F4AC500013AAF9 /* leetCode-0018.cpp in Sources */,
 				045FA99521AE92D40030ED7B /* leetCode-0206.c in Sources */,
 				045FA93121AC2A9D0030ED7B /* LinkTree.c in Sources */,
 				045FACBB21B2A1820030ED7B /* leetCode-0232.c in Sources */,
 				0499408D21D8E1F20013AAF9 /* kmp.c in Sources */,
 				04BD8D0B21C660FB00D703FD /* leetCode-0235.c in Sources */,
+				0499441D21FDBE490013AAF9 /* leetCode-0050.cpp in Sources */,
+				0499440821F4A1930013AAF9 /* leetCode-0001.cpp in Sources */,
 				045FA8A321A4CF330030ED7B /* main.c in Sources */,
 				04BD8D0321C660D700D703FD /* leetCode-0122.c in Sources */,
 				045FA98D21AE8CF50030ED7B /* leetCode-0141.c in Sources */,
@@ -1038,15 +1109,18 @@
 				045FA94021AD49000030ED7B /* leetCode-0234.c in Sources */,
 				04BD8CF721C65E4900D703FD /* leetCode-0025.c in Sources */,
 				045FACAF21B245560030ED7B /* LYCLinkQueue.c in Sources */,
+				0499412421E971270013AAF9 /* leetCode-0138.c in Sources */,
 				045FA93921AD31B40030ED7B /* leetCode-0016.c in Sources */,
 				04BD8CE721C659ED00D703FD /* leetCode-0014.c in Sources */,
 				04A48D7721BBE3230060C723 /* leetCode-0033.c in Sources */,
 				7BA99C5721A63A4C00B0C94F /* leetCode-0007.c in Sources */,
+				049942CC21F328D20013AAF9 /* leetCode-0239.cpp in Sources */,
 				04A48D7321BAA7850060C723 /* leetCode-0069.c in Sources */,
 				04BD8CFB21C65E5A00D703FD /* leetCode-0050.c in Sources */,
 				045FA91B21AC271A0030ED7B /* MGraph.c in Sources */,
 				045FA91C21AC271A0030ED7B /* ALGraph.c in Sources */,
 				04A48D6F21BA9F730060C723 /* LYCSearch.c in Sources */,
+				0499441121F600E20013AAF9 /* leetCode-0098.cpp in Sources */,
 				7B2736B121A642BB00161DE8 /* leetCode-0008.c in Sources */,
 				045FA99121AE8FEC0030ED7B /* leetCode-0142.c in Sources */,
 				045FACB321B269760030ED7B /* leetCode-0020.c in Sources */,
